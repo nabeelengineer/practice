@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>
+homepage
+</title>
+<style>
+body{
+    background-image:url(bg.jpg);
+    background-size:100% 900px;
+    padding:0;
+    margin:0;
+ background-attachment:fixed;
+}
+
+/* start nav coding */
+nav{
+    width:100%;
+    height:280px;
+    float:left;
+    box-sizing:border-box;
+    background-color:rgba(0,0,0,0.8);
+    padding:50px;
+}
+
+#welcome-text{
+    color:white;
+    text-align:center;
+    font-size:80px;
+    padding:0;
+    margin:0;
+}
+
+#navbar{
+    width:900px;
+    height:80px;
+    box-sizing: border-box;
+    margin-top:10px;
+}
+
+#nav-item{
+    width:20%;
+    height:80px;
+    border-width:1px;
+    border-style:solid;
+    border-color:white;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    font-family:sans-serif;
+    font-size:18px;
+}
+/*end nav coding*/
+#product-section{
+width:95%;
+height:477px;
+box-sizing:border-box;
+float:left;
+background-color:rgba(255,255,255,0.8);
+margin-left:2.5%;
+margin-right:2.5%;
+}
+#brand-header-text{
+text-align:center;
+font-family:century gothic;
+font-size:40px;
+}
+#brand-pic{
+width:200px;
+height:80px;
+float:left;
+border:3px solid #323232;
+background-color:white;
+margin:20px;
+margin-top:20px;
+
+}
+#serach{
+width:60%;
+height:60px;
+float:left;
+box-sizing:border-box;
+margin-right:20%;
+margin-left:20%;
+margin-top:50px;
+border:1px solid black;
+font-size:16px;
+padding:8px;
+background-image:url(search.png);
+background-size:40px 40px;
+background-repeat:no-repeat;
+background-position:right;
+}
+#zest-product{
+width:100%;
+height:500px;
+float:left;
+box-sizing:border-box;
+background-color:rgba(0,0,0,0.8);
+}
+#zest-header{
+color:white;
+font-family:sans-serif;
+font-size:40px;
+text-align:center;
+}
+#zest-goods{
+width:250px;
+height:320px;
+float:left;
+box-sizing:border-box;
+border:3px solid white;
+margin:40px;
+margin-top:20px;
+}
+
+
+#Dove-product{
+width:100%;
+height:500px;
+float:left;
+box-sizing:border-box;
+background-color:rgba(0,0,0,0.8);
+}
+#Dove-header{
+color:white;
+font-family:sans-serif;
+font-size:40px;
+text-align:center;
+}
+#Dove-goods{
+width:250px;
+height:320px;
+float:left;
+box-sizing:border-box;
+border:3px solid white;
+margin:40px;
+margin-top:20px;
+}
+#footer-text{
+text-align:center;
+font-weight:bold;
+font-family:sans-serif;
+margin-top:10px
+
+
+}
+#footer{
+width:100%;
+height:40px;
+background-color:rgba(255,255,255,0.8);
+float:left;
+}
+#product-name{
+color:white;
+text-align:center;
+padding:0;
+margin:0;
+margin-top:5px;
+}
+#product-price{
+color:white;
+margin-left:8px;
+}
+#shopping-cart{
+color:white;
+float:right;
+margin-top:-35px;
+margin-right:5px;
+}
+</style>
+</head>
+<body>
+    <!--start nav coding-->
+    <nav>
+    <h1 id="welcome-text">Welcome !</h1>
+    <table id="navbar" align="center" cellspacing="10">
+    <tr>
+    <td id="nav-item"><a href="#">Home</a></td>
+    <td id="nav-item"><a href="#">Products</a></td>
+    <td id="nav-item"><a href="#">Contacts</a></td>
+    <td id="nav-item"><a href="#">Login</a></td>
+    <td id="nav-item"><a href="#">Sign up</a></td>
+    </tr>          
+        </table>
+    </nav>
+<div id="product-section">
+<h1 id="brand-header-text">Select Your Brand</h1>
+<div id="brand-pic">
+<a href="#zest-product"><img src="C:\Users\admin\Desktop\beauty product section\cmp-one.png" alt="cmp-one"></a>
+</div>
+<div id="brand-pic">
+<a href="#Dove-product"><img src="C:\Users\admin\Desktop\beauty product section\cmp-two.png" alt="cmp-two"></a>
+</div>
+<div id="brand-pic">
+<img src="C:\Users\admin\Desktop\beauty product section\cmp-three.png" alt="cmp-three">
+</div>
+<div id="brand-pic">
+<img src="C:\Users\admin\Desktop\beauty product section\cmp-four.png" alt="cmp-four">
+</div>
+<div id="brand-pic">
+<img src="C:\Users\admin\Desktop\beauty product section\cmp-five.jpg" alt="cmp-five">
+</div>
+<form>
+<input type="search" name="search" placeholder="Serach another brand here" id="serach">
+</form>
+</div>
+<div id="zest-product">
+<h1 id="zest-header">Zest Product</h1>
+<div id="zest-goods">
+<img src="lipstick.jpg" width="100%">
+<p id="product-name">Zest Lipstick</p>
+<p id="product-price">Price: <i class="fa fa-rupee">200</i></p>
+<p id="shopping-cart"><i class="fa fa-shopping-cart"> Buy Now!</i></p>
+</div> 
+<div id="zest-goods">
+<img src="powder.jpg" width="100%">
+</div> 
+<div id="zest-goods">
+<img src="lipstick.jpg" width="100%">
+</div> 
+<div id="zest-goods">
+<img src="powder.jpg" width="100%">
+</div> 
+</div>
+<div id="Dove-product">
+<h1 id="Dove-header">Dove Product</h1>
+<div id="Dove-goods">
+<img src="powder.jpg" width="100%">
+</div> 
+<div id="Dove-goods">
+<img src="lipstick.jpg" width="100%">
+</div> 
+<div id="Dove-goods">
+<img src="powder.jpg" width="100%">
+</div> 
+<div id="Dove-goods">
+<img src="lipstick.jpg" width="100%">
+</div> 
+</div>
+<div id="footer">
+<h5 id="footer-text">Developed By:Salman Ali</h5>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Vfx Animation</title>
+<style>
+.page{
+width:720px;
+height:200px;
+margin:100px auto;
+overflow:hidden;
+}
+.slider{
+width:1800px;
+height:200px;
+float:left;
+position:relative;
+animation:wap 30s alternate infinite;
+}
+@keyframes wap{
+0%{top:0;left:0}
+100%{top:0;left:-1000px}
+}
+img{
+float:left;
+width:250px;
+height:80px;
+margin:50px;
+-webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+}
+img:hover{
+-webkit-filter:none;
+filter:none;
+}
+.slider:hover{
+animation-play-state:paused;
+}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="slider">
+<img src="a.jfif" alt="a"/>
+<img src="b.jpg" alt="b"/>
+<img src="c.png" alt="c"/>
+<img src="d.png" alt="d"/>
+<img src="e.jfif" alt="e"/>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>app</title>
+<style>
+h1{
+font-family:sans-serif;
+font-size:80px;
+}
+input{
+width:450px;
+height:60px;
+}
+button{
+width:150px;
+height:60px;
+}
+#result{
+width:200px;
+height:200px;
+border:1px solid #ccc;
+margin:50px;
+background-size:100% 100%;
+}
+</style>
+<script>
+function wap()
+{
+var a=document.getElementById("user").value;
+var b=document.getElementById("result");
+if(a=='apple')
+{
+b.style.backgroundImage="url(apple.jpg)";
+}
+else if(a=='ball')
+{
+b.style.backgroundImage="url(68975115-vector-illustration-of-soccer-ball-logo-.jpg)";
+}
+}
+</script>
+</head>
+<body>
+<h1>A for Apple Application</h1>
+<input id="user">
+<button onclick="wap()">Check Now!</button>
+<div id="result"></div>
+</body>
+</html>

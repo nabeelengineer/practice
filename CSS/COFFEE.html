@@ -1,0 +1,52 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<style>
+h1{
+font-family:sans-serif;
+}
+div{
+width:720px;
+height:480px;
+border:15px solid black;
+margin:0 auto;
+box-shadow:0px 0px 60px red;
+box-radius:4px;
+}
+button{
+width:50px;
+height:40px;
+background-color:white;
+border:1px solid black;
+font-family:sans-serif:
+margin-top:50px;
+}
+</style>
+<script>
+function one(){
+var a=document.getElementById("image");
+a.src="gettyimages-157528129-612x612.jpg";
+}
+function  two()
+{
+var b=document.getElementById("image");
+b.src="download.jpg";
+}
+function three()
+{
+var c=document.getElementById("image");
+c.src="171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-760w.jpg";
+}
+</script>
+<h1 align="center">Image Pagination</h1>
+<div>
+<img id="image" src="coffee.jpg" width="720" height="480">
+</div>
+<center>
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="three()">3</button>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>document</title>
+<script src="jquery.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(
+function()
+{
+"use strict";
+$("button").click(
+function()
+{
+$("div.a,div.b").hide(5000);
+}
+);
+}
+);
+</script>
+<button>Click me</button>
+<div class="a">
+Welcome to my world!
+</div>
+<div class="b">
+welcome to my page!
+</div>
+</body>
+</html>

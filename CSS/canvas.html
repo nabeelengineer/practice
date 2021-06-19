@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Canvas</title>
+<script src="html2canvas.js"></script>
+</head>
+<body>
+<div id="page">
+<h1>Welcome</h1>
+</div>
+<button onclick="demo()">test</button>
+<script>
+function demo()
+{
+var page=document.getElementById("page");
+html2canvas(page).then(function(result)
+{
+var url=result.toDataURL("image/jpeg");
+var a=document.createElement("a");
+a.href=url;
+a.download="sample.jpg";
+a.click();
+}
+);
+}
+</script>
+</body>
+</html>

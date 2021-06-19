@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>WELCOME TO MY WEBSITES</title>
+<script src="jquery"></script>
+<style>
+h2{
+font-size:100px;
+text-align:center;
+color:red;
+}
+#blur-bg{
+width:100%;
+min-height:100%;
+background:rgba(0,0,0,0.8);
+position:absolute;
+top:0;
+left:0;
+}
+#model{
+width:380px;
+height:450px;
+background:red;
+position:absolute;
+left:35%;
+top: -700px;
+}
+</style>
+<script>
+        $(document).ready(
+            function(){
+                "use strict";
+                $("#model").animate({
+                    "top":"250px",
+                },1000);
+                $("#blur-bg").fadeIn(1000);
+$("#blur-bg").click(
+function()
+{
+$("#model").animate({"top":"-800px"},1000);
+$("#blur-bg").fadeOut(1000);
+                    }
+                );
+}
+);
+    </script>
+</head>
+<body>
+<h2 align="center">WELCOME TO MY WEBSITE</h2>
+<div id="blur-bg"></div>
+<div id="model">
+</div>
+</body>
+</html>

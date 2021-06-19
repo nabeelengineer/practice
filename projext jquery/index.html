@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+    <title>Document</title>
+    <style>
+        .initial-state , .resizing-state , .stop-state{
+            width:200px;
+            border: 1px solid #ccc;
+            padding:20px;
+            box-sizing:border-box;
+            float:left;
+            margin-right:20px;
+            height:200px;
+        }
+        .ui{
+            width:200px;
+            padding:20px;
+            box-sizing:border-box;
+            float:left;
+            margin-right:20px;
+            height:200px;
+            background-color:red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+    $(".ui").resizable({
+        start:function(event,ui){
+            $(".initial").html("width = "+ui.size.width+"<br> Height = "+ui.size.height);
+        },
+        resize:function(event,ui){
+            $(".resizing").html("width = "+ui.size.width+"<br> Height = "+ui.size.height);
+        },
+        stop:function(event,ui){
+            $(".stop").html("width = "+ui.size.width+"<br> Height = "+ui.size.height);
+        },
+    });
+});
+    </script>
+</head>
+<body>
+    <div class="ui">
+    </div>
+    <div class="initial-state">
+        <h1 align="center">Initial State</h1>
+        <hr>
+        <p class="initial"></p>
+    </div>
+    <div class="resizing-state">
+        <h1 align="center">Resizing state</h1>
+        <hr>
+        <p class="resizing"></p>
+    </div>
+    <div class="stop-state">
+        <h1 align="center">Stop state</h1>
+        <hr>
+        <p class="stop"></p>
+    </div>
+    </body>
+</html>

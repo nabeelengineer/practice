@@ -1,0 +1,31 @@
+<Doctype html>
+<html>
+<head>
+<title>Function</title>
+<meta charset="utf-8">
+<meta lang=en-US">
+<script>
+function add()
+{
+ var x=document.getElementById("firstname").value;
+ var y=document.getElementById("lastname").value;
+ document.write("Your name is : "+x+" "+y);
+}
+</script>
+</head>
+<body>
+<h1 align="center">Join your Name!</h1>
+<hr>
+<form>
+
+Firstname<br>
+<input type="text" name="firstname" id="firstname">
+<br><br>
+Lastname<br>
+<input type="text" name="lastname" id="lastname">
+<br><br>
+<input type="submit" value"joint name now !" onclick="add()">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<title>MCQ</title>
+</head>
+<body>
+<h1>What Is The Full Form Of USP</h1>
+Uniterrupted Power Supply<input type="radio" name="ans" value="Uniterrupted Power Supply" id="one" onclick="check(this)"><br>
+Universal Power Supply<input type="radio" name="ans" value="Universal Power Supply" id="two" onclick="check(this)"><br>
+United Power Supply<input type="radio" name="ans" value="United Power Supply" id="three" onclick="check(this)"><br>
+Unit Power Supply<input type="radio" name="ans" value="Unit Power Supply" id="four" onclick="check(this)"><br>
+<script>
+function check(e){
+let x=document.getElementById(e.id).value;
+if(x== "Uniterrupted Power Supply"){
+swal("Good job!", "Correct answer!", "success");
+}
+else{
+swal("Try adain!", "Wrong answer!", "error");
+}
+}
+</script>
+</body>
+</html>

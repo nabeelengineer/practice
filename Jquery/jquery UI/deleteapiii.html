@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/effect.js"></script>
+    <title>Document</title>
+    <style>
+        .email-list{
+            margin:50px;
+        }
+        li{
+            border:1px solid #ccc;
+            padding:20px;
+            font-family:sans-serif;
+            list-style:none;
+            margin:2px 0;
+            width:40%;
+        }
+        .ul-selecting{
+            background:red;
+        }
+        .ul-selected{
+            background:yellow;
+        }
+        .btn,.restore-btn{
+            border:1px solid #ccc;
+            padding:20px;
+            background:white;
+            cursor:pointer;
+        }
+        .restore-btn{
+            display:none;
+        }
+        .b-mode,.c-mode{
+            padding:20px;
+            background:white;
+            border:1px solid #ccc;
+            margin-right:1px;
+        }
+        .notice{
+            font-family:sans-serif;
+        }
+    </style>
+    <script>
+           $(document).ready(function(){
+            var txtbtn = $('.btn').html();
+            var count=0;
+            $('.email-list').selectable({
+                selected:function(event,ui){
+                    $('.btn').html('Delete');
+                },
+                unselected:function(event,ui){
+                    $('.btn').html(txtbtn);
+                },
+                stop:function(event,ui){
+                    $('.btn').click(function(){
+                        count+= $('.ui-selected').length;
+                        del_record = $('.ui-selected');
+                        $('.btn').html(count+" item deleted !");
+                        $('.ui-selected').remove();
+                        $('.restore-btn').fadeIn();
+                        $('.restore-btn').click(function(){
+                            $('.email-list').append(del_record);
+                    });
+                }
+            });
+        });
+    </script>
+    </head>
+    <body>
+        <h1 align="center">jQuery Delete Apii</h1>
+        <hr>
+        <center><button class="b-mode">Selected Mode</button><button class="c-mode">Draggable Mode</button></center>
+        <ul class="email-list">
+            <li>ersaurav08@gmail.com</li>
+            <li>ersaurav08@gmail.com</li>
+            <li>ersaurav08@gmail.com</li>
+            <li>ersaurav08@gmail.com</li>
+            <li>ersaurav08@gmail.com</li>
+        </ul>
+        <center>
+            <button class="btn">Select content to perform task</button>
+            <button class="restore-btn">Restore Delete Item</button>
+            <i class="fa fa-trash del" style="font-size:50px;border:1px solid #ccc; border-radius:50%;padding:25px;width:100px;height:100px;box-sizing:border-box;display:none;margin-right:5px;"></i>
+            <i class="fa fa-undo undo" style="font-size:50px;border:1px solid #ccc;border-radius:50%;padding:25px;width:100px;height:100px;box-sizing:border-box;display:none;"></i>
+            <p class="notice"></p>
+        </center>
+    </body>
+    </html>

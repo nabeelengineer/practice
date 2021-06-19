@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Document</title>
+<script src="jquery.js"></script>
+<style>
+img{
+width:180px;
+height:150px;
+margin:10px;
+float:left;
+display:none;
+}
+</style>
+</head>
+<body>
+<img src="C:\Users\BrownFox\Desktop\Jquery\1.jpg" alt="a" id="a">
+<img src="C:\Users\BrownFox\Desktop\Jquery\3.jpg" alt="b" id="b">
+<img src="C:\Users\BrownFox\Desktop\Jquery\4.jpg" alt="c" id="c">
+ <script>
+        $(document).ready(
+        function()
+        {
+            "use strict";
+            $("#a").show(1000,function()
+            {
+                $("#b").show(1000,function()
+                {
+                    $("#c").show(1000);
+                });
+            });
+        }
+     );
+    </script>
+</body>
+</html>

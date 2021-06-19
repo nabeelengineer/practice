@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Document</title>
+<script src="jquery.js"></script>
+<style>
+h1{
+float:left;
+font-size:200px;
+font-family:sans-serif;
+}
+button{
+width:100%;
+padding:20px;
+position:fixed;
+top:0;
+left:0;
+border:none;
+background:black;
+color:white;
+font-size:40px;
+}
+</style>
+</head>
+<body>
+<script>
+$(document).ready(
+function()
+{
+"use strict";
+$("button").click(
+function()
+{
+$("#w").toggle(1000,function(){
+$("#a").toggle(1000,function(){
+$("#p").toggle(1000,function(){
+if($("button").html()==="Hide")
+{$("button").html("Show");}
+else{
+$("button").html("Hide");
+}
+})
+})
+})
+}
+)
+}
+)
+</script>
+<button>Hide</button>
+<h1 id="w">W</h1>
+<h1 id="a">A</h1>
+<h1 id="p">P</h1>
+</body>
+</html>

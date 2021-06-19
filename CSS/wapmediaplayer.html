@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Create Media Player</title>
+<style>
+header{
+height:100px;
+width:982px;
+background:black;
+margin:0 auto;
+}
+h1{
+color:white;
+text-align:center;
+font-family:cooper;
+padding-top:25px;
+}
+section{
+width:972px;
+height:555px;
+border:5px solid black;
+margin:0 auto;
+}
+footer{
+width:982px;
+height:50px;
+background:black;
+margin:0 auto;
+}
+video{
+width:100%;
+height:100%;
+}
+input{
+height:40px;
+width:140px;
+background:white;
+margin-left:140px;
+border:none;
+border-radius:50px;
+}
+button{
+height:40px;
+width:140px;
+background:white;
+margin-left:140px;
+border:none;
+border-radius:50px;
+}
+button:focus;{
+border-radius:0;
+outline:none;
+}
+</style>
+<script>
+function play()
+{
+var x=document.getElementById("video")
+x.play();
+}
+function pause()
+{
+var x=document.getElementById("video");
+x.pause();
+}
+</script>
+</head>
+<body>
+<header>
+<h1>WAP MEDIA PLAYER</h1>
+</header>
+<section>
+<video src="C:\Users\BrownFox\Downloads\Chhote Chhote Peg - SKTS (HQ 360p).mp4" id="video"></video>
+</section>
+<footer>
+<button onclick="">Upload</button>
+<button onclick="play()">Play</button>
+<button onclick="pause()">Pause</button>
+</footer>
+</body>
+</html>

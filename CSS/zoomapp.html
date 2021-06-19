@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Zoom Application</title>
+<style>
+h1{
+font-family: sans-serif;
+font-size: 30px;
+color:red;
+text-align:center;
+}
+button{
+float:left;
+border:1px solid #ccc;
+background-color:white;
+padding:10px;
+margin:10px;
+}
+</style>
+<script>
+function In()
+{
+var result=document.getElementById("result");
+result.style.fontSize="80px";
+}
+function Out()
+{
+var result=document.getElementById("result");
+result.style.fontSize="40px";
+}
+function Re()
+{
+var result=document.getElementById("result");
+result.style.fontSize="60px";
+}
+</script>
+</head>
+<body>
+<h1 id="result">Integral University</h1>
+<button id="In" onclick="In()">Zoom In</button>
+<button id="Out" onclick="Out()">Zoom Out</button>
+<button id="Re" onclick="Re()">Reset</button>
+</body>
+</html>

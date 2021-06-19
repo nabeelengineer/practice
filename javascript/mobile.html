@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>mobile</title>
+</head>
+<body>
+<form onsubmit="return login()">
+
+Mobile
+<br><br>
+<input type="number" name="mobile" id="mobile">
+<br><br>
+
+Re-enter mobile
+<br><br>
+<input type="number" name="remobile" id="remobile">
+<br><br>
+
+<input type="submit" value="Login">
+</form>
+<h1 id="result"></h1>
+<script>
+function login()
+{
+  var mobile = document.getElementById("mobile").value;
+  var remobile = document.getElementById("remobile").value;
+  var check = remobile == mobile ? "match success" : "match failed";
+  document.getElementById("result").innerHTML = check;
+  return false;
+}
+</script>
+</body>
+</html>

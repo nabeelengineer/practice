@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.js"></script>
+    <title>Document</title>
+    <style>
+        div{
+            width:300px;
+            border:1px solid #CCC;
+            padding:20px;
+            box-sizing:border-box;
+            float:left;
+            margin-right:15px;
+            margin-left:15px;
+        }
+        img{
+            margin:20px;
+        }
+    </style>
+    <script>
+         $(document).ready(function(){
+            $(".box img").draggable({
+                helper:'clone',
+                revert:'invalid',
+            });
+            $(".fruit-box").droppable({
+                accept:'.fruits',
+                drop:function(event,ui){
+                    $(".fruit-box").append(ui.draggable);
+                }
+            });
+            $(".flower-box").droppable({
+                accept:'.flowers',
+                drop:function(event,ui){
+                    $(".flower-box").append(ui.draggable);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 align="center">Pickout fruits and flower in boxes</h1>
+    <hr>
+    <div class="box">
+        <h1 align="center">Fruits and flower boxes</h1>
+        <hr>
+        <img src="download.jpg" alt="f1" width="100" class="fruits">
+        <img src="download (1).jpg" alt="f2" width="100" class="fruits">
+        <img src="download (2).jpg" alt="f3" width="100" class="fruits">
+        <img src="download (3).jpg" alt="f12" width="100" class="flowers">
+        <img src="download (4).jpg" alt="f13" width="100" class="flowers">
+        <img src="download (5).jpg" alt="f14" width="100" class="flowers">
+    </div>
+    <div class="fruit-box">
+        <h1 align="center">Fruits-box</h1>
+        <hr>
+        </div>
+        <div class="flower-box">
+            <h1 align="center">Flowers-box</h1>
+            <hr>
+        </div>
+</body>
+</html>

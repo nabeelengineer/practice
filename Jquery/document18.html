@@ -1,0 +1,64 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Document</title>
+<script src="jquery.js"></script>
+<style>
+*{
+padding:0;
+margin:0;
+}
+.loader-con{
+width:100%;
+min-height:100%;
+position:fixed;
+top:0;
+left:0;
+}
+.slide-left{
+position:absolute;
+left:0;
+top:0;
+width:50%;
+min-height:100%;
+background-color:f5f5f5;
+}
+.slide-right{
+width:50%;
+min-height:100%;
+position:absolute;
+right:0;
+top:0;
+background-color:f5f5f5;
+}
+.loader{
+position:absolute;
+top:50%;
+left:48%;
+}
+</style>
+</head>
+<body>
+<script>
+$(document).ready(
+function(){
+"use strict";
+$(".loader").fadeOut(1000,function(){
+$(".slide-left,.slide-right").animate({
+"width":"0%"
+},5000,function(){
+$(".loader-con").fadeOut();
+});
+});
+}
+);
+</script>
+<div class="loader-con">
+        <div class="slide-left"></div>
+        <div class="slide-right"></div>
+        <i class="fa fa-spinner fa-spin loader" style="font-size:48px"></i>
+        <span class="sr-only">Loading...</span>
+    </div>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/VwU3SlQ723Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

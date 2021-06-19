@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Photoshot team</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+margin:0;
+padding:0;
+font-family: 'Dosis', sans-serif;
+}
+.team-section{
+text-align:center;
+background:#34495e;
+padding:60px;
+}
+.team-section h1{
+text-transform:uppercase;
+margin-bottom:60px;
+color:white;
+font-size:40px;
+padding:0;
+margin:0;
+}
+.border{
+display:block;
+margin:auto;
+width:160px;
+height:3px;
+background:#3498db;
+margin-bottom:40px;
+}
+.ps{
+margin-bottom:80px;
+}
+.ps a{
+display:inline-block;
+margin:0 30px;
+width:160px;
+height:160px;
+overflow:hidden;
+border-radius:50%;
+}
+.ps a img{
+width:100%;
+filter:grayscale(100%);
+transition:0.4s all;
+}
+.ps a:hover img{
+filter:none;
+}
+.section{
+width:600px;
+margin:auto;
+font-size:20px;
+color:white;
+text-align:justify;
+height:0;
+overflow:hidden;
+}
+.name{
+display:block;
+margin-bottom:30px;
+text-align:center;
+text-transform:uppercase;
+font-size:22px;
+}
+.section:target{
+height:auto;
+}
+</style>
+</head>
+<body>
+<div class="team-section">
+<h1>Our Team</h1>
+<span class="border"></span>
+<div class="ps">
+<a href="#p1"><img src="janeharrison.jpg" alt=""></a>
+<a href="#p2"><img src="darla.jpg" alt=""></a>
+<a href="#p3"><img src="arnold.jpg" alt=""></a>
+</div>
+<div class="section" id="p1">
+<span class="name">Jane Harrison</span>
+<span class="border"></span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's strandard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen book
+</p>
+</div>
+<div class="section" id="p2">
+<span class="name">Darla Baldwin</span>
+<span class="border"></span>
+<p>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as oppsed to using 'Content here,
+</p>
+</div>
+<div class="section" id="p3">
+<span class="name">Arnold Larson</span>
+<span class="border"></span>
+<p>
+There are many variation of passages of Lorem Ipsum available, but the majority have suffered alteration in  some form, by injected humour, or randomised words which don't look even slightly believable. if you are going to use a passage to use a passage of Lorem Ipsum, you need to be sure there isn't anything embrassing hidden in the middle of text.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>pricing plan</title>
+<style>
+*{
+box-sizing:border-box;
+margin:0px;
+padding:0px;
+}
+body{
+margin:0px;
+padding:100px 0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.container{
+display:flex;
+align-items:center;
+justify-content:center;
+width:85%;
+}
+.columns{
+width:33.33%;
+padding:8px;
+position:relative;
+}
+.price{
+list-style-type:none;
+border:1px solid #eee;
+margin:0;
+padding:0;
+-webkit-transition:0.3s;
+transition:0.3s;
+}
+.price:hover{
+box-shadow:0 8px 12px 0 rgba(0,0,0,0.2);
+}
+.price .header{
+background-color:#111;
+color:white;
+font-size:25px;
+}
+#pro .header{
+background-color:#4caf50;
+}
+.price li{
+border-bottom:1px solid #eee;
+padding:20px;
+text-align:center;
+}
+.price .grey{
+background-color:#eee;
+font-size:20px;
+}
+.button{
+background-color:#4caf50;
+border:none;
+color:white;
+padding: 10px 25px;
+text-align:center;
+text-decoration:none;
+font-size:18px;
+}
+.button:hover{
+background-color:white;
+color:#4caf50;
+border:2px solid #4caf50;
+}
+#basic{
+animation-name:basic;
+animation-duration:1.5s;
+}
+@keyframes basic{
+0%{left:-500px;}
+100%{left:0px;}
+}
+#pro{
+animation-name:pro;
+animation-duration:1.5s;
+}
+@keyframes pro{
+0%{bottom:-500px;}
+100%{bottom:0px;}
+}
+#premium{
+animation-name:premium;
+animation-duration:1.5s;
+}
+@keyframes premium{
+0%{right:-500px;}
+100%{right:0px;}
+}
+</style>
+</head>
+<body>
+<!--table container-->
+<div class="container">
+<!-- basic plan-->
+<div class="columns" id="basic">
+<ul class="price">
+<li class="header">Basic</li>
+<li class="grey">$ 9.99/ year</li>
+<li>10GB Storage</li>
+<li>10 Emails</li>
+<li>10 Domains</li>
+<li>1GB Bandwidth</li>
+<li class="grey"><a href="#" class="button">Sign Up</a></li>
+</ul>
+</div>
+<!--Pro plan-->
+<div class="columns" id="pro">
+<ul class="price">
+<li class="header">Pro</li>
+<li class="grey">$ 24.99/ year</li>
+<li>25GB Storage</li>
+<li>25 Emails</li>
+<li>25 Domains</li>
+<li>2GB Bandwidth</li>
+<li class="grey"><a href="#" class="button">Sign Up</a></li>
+</ul>
+</div>
+<!--Premium plan-->
+<div class="columns" id="Premium">
+<ul class="price">
+<li class="header">Premium</li>
+<li class="grey">$ 49.99/ year</li>
+<li>50GB Storage</li>
+<li>50 Emails</li>
+<li>50 Domains</li>
+<li>5GB Bandwidth</li>
+<li class="grey"><a href="#" class="button">Sign Up</a></li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Upload Video File in Media player</title>
+</head>
+<body>
+<video controls="controls" width="720" id="video"></video>
+<input type="file" accept="video/*" id="upload" onchange="demo()">
+<script>
+function demo()
+{
+  var upload = document.getElementById("upload");
+  var url = URL.createObjectURL(upload.files[0]);
+  var video = document.getElementById("video");
+  video.src = url;
+  video.play(); 
+}
+</script>
+</body>
+</html>

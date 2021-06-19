@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Responsive Page</title>
+<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+box-sizing: border-box;
+}
+.body{
+margin:0;
+padding:0;
+}
+.col-1{
+width:8.33%;
+}
+.col-2{
+width:16.66%
+}
+.col-3{
+width:25%;
+}
+.col-4{
+width:33.33%;
+}
+.col-5{
+width:41.66%;
+}
+.col-6{
+width:50%;
+}
+.col-7{
+width:58.33%;
+}
+.col-8{
+width:66.66%;
+}
+.col-9{
+width:75%;
+}
+.col-10{
+width:83.33%;
+}
+.col-11{
+width:91.66%;
+}
+.col-12{
+width:100%;
+}
+.header,.nav,.section,.footer{
+float:left;
+margin-left:4.17;
+margin-right:4.17%;
+}
+.header{
+height:150px;
+background-color:black;
+color:white;
+}
+.nav{
+height:60px;
+}
+ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+li{
+float:left;
+background-color:red;
+height:60px;
+text-align:center;
+padding-top:17px;
+}
+a{
+color:white;
+text-decoration:none;
+font-family: sans-serif;
+}
+.section{
+height:480px;
+background-color:blue;
+color:white;
+}
+.footer{
+height:60px;
+background-color:black;
+color:white;
+}
+@media only screen and (max-width:768px)
+{
+.col-12{
+width:100%;
+}
+.header,.nav,.section,.footer{
+margin:0;
+}
+.header{
+height:50px;
+}
+.nav{
+height:auto;
+}
+.col-3{
+width:100%;
+clear:left;
+margin-top:1px;
+background-color:#0cda2e;
+height:40px;
+padding-top:11px;
+}
+.section{
+height:250px;
+}
+h2{
+font-size:20px;
+font-family: sans-serif;
+}
+.footer{
+height:40px;
+padding-top:1px;
+}
+h3{
+padding:0;
+margin:0;
+font-family: sns-serif;
+}
+}
+</style>
+</head>
+<body>
+<div class="row">
+<div class="col-11 header">
+<h1 align="center">Welcome!</h1>
+</div>
+</div>
+<div class="row">
+<div class="col-11 nav">
+<ul>
+<li class="col-3"><a href="#">Home</a></li>
+<li class="col-3"><a href="#">Images</a></li>
+<li class="col-3"><a href="#">Videos</a></li>
+<li class="col-3"><a href="#">Movies</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-11 section">
+<h2 align="center">Welcome to my first Responsive Websites!</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-11 footer">
+<h2 align="center">Developed by Nabeel</h2>
+</div>
+</body>
+</html>

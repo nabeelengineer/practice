@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Learn jQuery</title>
+<script src="jquery.js"></script>
+<style>
+body{
+font-family:arial
+}
+#box{
+background:pink;
+padding:10px;
+border:1px solid #000;
+}
+</style>
+</head>
+<body>
+<h1>Yahoo Baba : jQuery Mouse Events</h1>
+<div id="box" class="test">
+<h2>Test Box</h2>
+<p>Ahmad Nabeel</p>
+</div>
+<script>
+$(document).ready(function(){
+$('#box').click(function(){
+$('#box').css('background-color','green');
+});
+});
+</script>
+</body>
+</html>
+
+

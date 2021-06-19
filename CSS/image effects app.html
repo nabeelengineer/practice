@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Image Effects App</title>
+</head>
+<body>
+<h1 align="centre">Image Effects</h1>
+<div id="Nabeel">
+<img src="1.jpg" width="600" height="396" id="pix">
+<br><br><br>
+<b>Brightness</b>
+<input type="range" min="0" max="150" oninput="bright()" id="brightness">
+<b>Contrast</b>
+<input type="range" min="0" max="400" oninput="contrast()" id="contrast">
+<b>Saturate</b>
+<input type="range" min="0" max="400" oninput="saturation()" id="saturation">
+</div>
+<script>
+function bright()
+{
+var x=document.getElementById("brightness").value;
+var y=document.getElementById("pix");
+y.style.filter="brightness("+x+")";
+}
+function contrast()
+{
+var x=document.getElementById("contrast").value;
+var y=document.getElementById("pix");
+y.style.filter="contrast("+x+")";
+}
+function saturation()
+{
+var x=document.getElementById("saturation").value;
+var y=document.getElementById("pix");
+y.style.filter="saturate("+x+")";
+}
+</script>
+</body>
+</html>
